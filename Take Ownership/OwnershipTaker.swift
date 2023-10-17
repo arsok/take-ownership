@@ -2,6 +2,7 @@ import Foundation
 import Security
 import ServiceManagement
 import SwiftUI
+import os.log
 
 class OwnershipTaker {
     private let fileManager = FileManager.default
@@ -14,7 +15,6 @@ class OwnershipTaker {
     private func changeOwnership(_ taskData: TaskData) -> Bool {
         let script = enrichWithUserParams(takeOwnershipScript, taskData)
         if (script.isEmpty) {
-            // todo log
             return false
         }
         
@@ -29,8 +29,8 @@ class OwnershipTaker {
             return fileAttributes[.ownerAccountName] as! String == taskData.userName 
                 && fileAttributes[.groupOwnerAccountName] as! String == taskData.group
         } catch {
+            os_log("Ownership change not completed: %@", log: OSLog.default, type: .error, error.localizedDescription)
             return false
-            // todo log
         }
     }
     
@@ -54,9 +54,10 @@ class OwnershipTaker {
             do {
                 return try String(contentsOfFile: scriptPath, encoding: .utf8)
             } catch {
-                print("Error reading script file: \(error)") // todo log error
+                os_log("Take Ownership Script can not be loaded: %@", log: OSLog.default, type: .error, error.localizedDescription)
             }
         }
+        os_log("Take Ownership Script not found", log: OSLog.default, type: .error)
         return ""
     }
 }
