@@ -99,6 +99,6 @@ private func openFileSelectorPanel() -> URL? {
 
 struct FileSelector_Previews: PreviewProvider {
     static var previews: some View {
-        FileSelector(ownershipTaker: OwnershipTaker())
+        FileSelector(ownershipTaker: OwnershipTaker(fileManager: FileManager.default))
     }
 }

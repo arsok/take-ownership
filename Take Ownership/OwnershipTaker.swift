@@ -4,9 +4,9 @@ import ServiceManagement
 import SwiftUI
 import os.log
 
-class OwnershipTaker {
-    private let fileManager = FileManager.default
+struct OwnershipTaker {
     private let takeOwnershipScript = loadTakeOwnershipScript()
+    var fileManager: FileManager
     
     func takeOwnership(_ url: URL) -> Bool {
         return changeOwnership(TaskData(path: url.path, userName: NSUserName(), group: "staff"))

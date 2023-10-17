@@ -21,18 +21,11 @@
 		CD561E5F2ADD87C700D7835F /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E5E2ADD87C700D7835F /* TaskData.swift */; };
 		CDBA25F52AD7F68000EDF067 /* Take_OwnershipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA25F42AD7F68000EDF067 /* Take_OwnershipApp.swift */; };
 		CDBA25F92AD7F68100EDF067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBA25F82AD7F68100EDF067 /* Assets.xcassets */; };
-		CDBA26072AD7F68100EDF067 /* Take_OwnershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA26062AD7F68100EDF067 /* Take_OwnershipTests.swift */; };
+		CDBA26072AD7F68100EDF067 /* OwnershipTakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA26062AD7F68100EDF067 /* OwnershipTakerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CDBA26032AD7F68100EDF067 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDBA25E92AD7F68000EDF067 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CDBA25F02AD7F68000EDF067;
-			remoteInfo = "Take Ownership";
-		};
-		CDBA260D2AD7F68100EDF067 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDBA25E92AD7F68000EDF067 /* Project object */;
 			proxyType = 1;
@@ -59,8 +52,7 @@
 		CDBA25F42AD7F68000EDF067 /* Take_OwnershipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take_OwnershipApp.swift; sourceTree = "<group>"; };
 		CDBA25F82AD7F68100EDF067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBA26022AD7F68100EDF067 /* Take OwnershipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Take OwnershipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDBA26062AD7F68100EDF067 /* Take_OwnershipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take_OwnershipTests.swift; sourceTree = "<group>"; };
-		CDBA260C2AD7F68100EDF067 /* Take OwnershipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Take OwnershipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBA26062AD7F68100EDF067 /* OwnershipTakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnershipTakerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +64,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CDBA25FF2AD7F68100EDF067 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBA26092AD7F68100EDF067 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -156,7 +141,6 @@
 			children = (
 				CDBA25F12AD7F68000EDF067 /* Take Ownership.app */,
 				CDBA26022AD7F68100EDF067 /* Take OwnershipTests.xctest */,
-				CDBA260C2AD7F68100EDF067 /* Take OwnershipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CD561E4E2ADD7E9B00D7835F /* en.lproj */,
-				CDBA26062AD7F68100EDF067 /* Take_OwnershipTests.swift */,
+				CDBA26062AD7F68100EDF067 /* OwnershipTakerTests.swift */,
 			);
 			path = "Take OwnershipTests";
 			sourceTree = "<group>";
@@ -224,24 +208,6 @@
 			productReference = CDBA26022AD7F68100EDF067 /* Take OwnershipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CDBA260B2AD7F68100EDF067 /* Take OwnershipUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDBA261C2AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take OwnershipUITests" */;
-			buildPhases = (
-				CDBA26082AD7F68100EDF067 /* Sources */,
-				CDBA26092AD7F68100EDF067 /* Frameworks */,
-				CDBA260A2AD7F68100EDF067 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CDBA260E2AD7F68100EDF067 /* PBXTargetDependency */,
-			);
-			name = "Take OwnershipUITests";
-			productName = "Take OwnershipUITests";
-			productReference = CDBA260C2AD7F68100EDF067 /* Take OwnershipUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -256,10 +222,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					CDBA26012AD7F68100EDF067 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = CDBA25F02AD7F68000EDF067;
-					};
-					CDBA260B2AD7F68100EDF067 = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = CDBA25F02AD7F68000EDF067;
 					};
@@ -280,7 +242,6 @@
 			targets = (
 				CDBA25F02AD7F68000EDF067 /* Take Ownership */,
 				CDBA26012AD7F68100EDF067 /* Take OwnershipTests */,
-				CDBA260B2AD7F68100EDF067 /* Take OwnershipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,13 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CDBA26002AD7F68100EDF067 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBA260A2AD7F68100EDF067 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,14 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBA26072AD7F68100EDF067 /* Take_OwnershipTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDBA26082AD7F68100EDF067 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CDBA26072AD7F68100EDF067 /* OwnershipTakerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +300,6 @@
 			isa = PBXTargetDependency;
 			target = CDBA25F02AD7F68000EDF067 /* Take Ownership */;
 			targetProxy = CDBA26032AD7F68100EDF067 /* PBXContainerItemProxy */;
-		};
-		CDBA260E2AD7F68100EDF067 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CDBA25F02AD7F68000EDF067 /* Take Ownership */;
-			targetProxy = CDBA260D2AD7F68100EDF067 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,38 +537,6 @@
 			};
 			name = Release;
 		};
-		CDBA261D2AD7F68100EDF067 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-OwnershipUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Take Ownership";
-			};
-			name = Debug;
-		};
-		CDBA261E2AD7F68100EDF067 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-OwnershipUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Take Ownership";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -653,15 +563,6 @@
 			buildConfigurations = (
 				CDBA261A2AD7F68100EDF067 /* Debug */,
 				CDBA261B2AD7F68100EDF067 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDBA261C2AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take OwnershipUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDBA261D2AD7F68100EDF067 /* Debug */,
-				CDBA261E2AD7F68100EDF067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

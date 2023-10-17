@@ -1,29 +1,60 @@
 import XCTest
 @testable import Take_Ownership
 
-final class Take_OwnershipTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class OwnershipTakerTests: XCTestCase {
+    private let testUrl = URL(fileURLWithPath: "/path/to/file")
+    
+    func testTakeOwnershipFileNotFound() {
+        // given
+        let fileManagerMock = FileManagerMock(fileExists: false)
+        let ownershipTaker = OwnershipTaker(fileManager: fileManagerMock)
+        
+        // when
+        let result = ownershipTaker.takeOwnership(testUrl)
+        
+        // then
+        XCTAssertFalse(result)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testTakeOwnershipFileAttributesNotChanged() {
+        // given
+        let fileManagerMock = FileManagerMock(permissionsUpdated: false)
+        let ownershipTaker = OwnershipTaker(fileManager: fileManagerMock)
+        
+        // when
+        let result = ownershipTaker.takeOwnership(testUrl)
+        
+        // then
+        XCTAssertFalse(result)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testTakeOwnershipFileAttributesAreCorrect() {
+        // given
+        let fileManagerMock = FileManagerMock()
+        let ownershipTaker = OwnershipTaker(fileManager: fileManagerMock)
+        
+        // when
+        let result = ownershipTaker.takeOwnership(testUrl)
+        
+        // then
+        XCTAssertTrue(result)
     }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+private class FileManagerMock: FileManager {
+    private let permissionsUpdated: Bool
+    private let fileExists: Bool
+    
+    init(fileExists: Bool = true, permissionsUpdated: Bool = true) {
+        self.fileExists = fileExists
+        self.permissionsUpdated = permissionsUpdated
+    }
+    
+    override func attributesOfItem(atPath path: String) throws -> [FileAttributeKey : Any] {
+        if fileExists && permissionsUpdated {
+            return [FileAttributeKey.ownerAccountName: NSUserName(), FileAttributeKey.groupOwnerAccountName: "staff"]
         }
+        
+        return [FileAttributeKey.ownerAccountName: "otherUser", FileAttributeKey.groupOwnerAccountName: "otherUserGroup"]
     }
-
 }
