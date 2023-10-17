@@ -1,0 +1,9 @@
+"TakeOwnershipName" = "Take Ownership";
+"SelectFilePanelText" = "Select file to take ownership";
+"HintDetails" = "and enter password when prompted \nto become the owner of the file";
+"HintSuccess" = "%s owns the file!\n You should have read & write permissions";
+"HintError" = "Something went wrong™\nPlease try again";
+"TaskStatusAlreadyPatched" = "You are already the owner of this file!";
+"TaskStatusError" = "Failed to take ownership! \n\nEnsure you have sudo privileges and script execution was not aborted";
+"TaskStatusReady" = "Drop a file here \nor click to select it in Finder";
+"TaskStatusSuccess" = "Success! \nScript execution finished";

@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD561DFA2AD7F8E000D7835F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561DF92AD7F8E000D7835F /* ContentView.swift */; };
+		CD561DFC2AD7F8EA00D7835F /* OwnershipTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561DFB2AD7F8EA00D7835F /* OwnershipTaker.swift */; };
+		CD561E022AD7F8FA00D7835F /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E012AD7F8FA00D7835F /* LogoView.swift */; };
+		CD561E112AD7FEE600D7835F /* FileSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E0F2AD7FEE600D7835F /* FileSelector.swift */; };
+		CD561E362AD7FF1200D7835F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD561E172AD7FF1200D7835F /* Localizable.strings */; };
+		CD561E512ADD7E9B00D7835F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD561E4F2ADD7E9B00D7835F /* Localizable.strings */; };
+		CD561E532ADD7EEB00D7835F /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD561E522ADD7EEB00D7835F /* Preview Content.xcassets */; };
+		CD561E562ADD820100D7835F /* StatusBasedDataDisplayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E552ADD820100D7835F /* StatusBasedDataDisplayHelper.swift */; };
+		CD561E592ADD827D00D7835F /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E582ADD827D00D7835F /* TaskStatus.swift */; };
+		CD561E5B2ADD831000D7835F /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E5A2ADD831000D7835F /* LocalizationHelper.swift */; };
+		CD561E5D2ADD842200D7835F /* takeOwnershipScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD561E5C2ADD842200D7835F /* takeOwnershipScript.txt */; };
+		CD561E5F2ADD87C700D7835F /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD561E5E2ADD87C700D7835F /* TaskData.swift */; };
+		CDBA25F52AD7F68000EDF067 /* Take_OwnershipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA25F42AD7F68000EDF067 /* Take_OwnershipApp.swift */; };
+		CDBA25F92AD7F68100EDF067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBA25F82AD7F68100EDF067 /* Assets.xcassets */; };
+		CDBA26072AD7F68100EDF067 /* Take_OwnershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA26062AD7F68100EDF067 /* Take_OwnershipTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDBA26032AD7F68100EDF067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBA25E92AD7F68000EDF067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBA25F02AD7F68000EDF067;
+			remoteInfo = "Take Ownership";
+		};
+		CDBA260D2AD7F68100EDF067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDBA25E92AD7F68000EDF067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBA25F02AD7F68000EDF067;
+			remoteInfo = "Take Ownership";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD561DF92AD7F8E000D7835F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD561DFB2AD7F8EA00D7835F /* OwnershipTaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnershipTaker.swift; sourceTree = "<group>"; };
+		CD561E012AD7F8FA00D7835F /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		CD561E0F2AD7FEE600D7835F /* FileSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSelector.swift; sourceTree = "<group>"; };
+		CD561E182AD7FF1200D7835F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		CD561E4D2ADD7E6400D7835F /* Take_Ownership.entitlements.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Take_Ownership.entitlements.entitlements; sourceTree = "<group>"; };
+		CD561E502ADD7E9B00D7835F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		CD561E522ADD7EEB00D7835F /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
+		CD561E552ADD820100D7835F /* StatusBasedDataDisplayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBasedDataDisplayHelper.swift; sourceTree = "<group>"; };
+		CD561E582ADD827D00D7835F /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		CD561E5A2ADD831000D7835F /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		CD561E5C2ADD842200D7835F /* takeOwnershipScript.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = takeOwnershipScript.txt; sourceTree = "<group>"; };
+		CD561E5E2ADD87C700D7835F /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
+		CDBA25F12AD7F68000EDF067 /* Take Ownership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take Ownership.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBA25F42AD7F68000EDF067 /* Take_OwnershipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take_OwnershipApp.swift; sourceTree = "<group>"; };
+		CDBA25F82AD7F68100EDF067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDBA26022AD7F68100EDF067 /* Take OwnershipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Take OwnershipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBA26062AD7F68100EDF067 /* Take_OwnershipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take_OwnershipTests.swift; sourceTree = "<group>"; };
+		CDBA260C2AD7F68100EDF067 /* Take OwnershipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Take OwnershipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDBA25EE2AD7F68000EDF067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA25FF2AD7F68100EDF067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA26092AD7F68100EDF067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD561E0D2AD7FEE600D7835F /* Selectors */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E0F2AD7FEE600D7835F /* FileSelector.swift */,
+			);
+			path = Selectors;
+			sourceTree = "<group>";
+		};
+		CD561E4E2ADD7E9B00D7835F /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E4F2ADD7E9B00D7835F /* Localizable.strings */,
+			);
+			name = en.lproj;
+			path = "Take Ownership/en.lproj";
+			sourceTree = SOURCE_ROOT;
+		};
+		CD561E542ADD81E200D7835F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E552ADD820100D7835F /* StatusBasedDataDisplayHelper.swift */,
+				CD561E5A2ADD831000D7835F /* LocalizationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CD561E572ADD826400D7835F /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E582ADD827D00D7835F /* TaskStatus.swift */,
+				CD561E5C2ADD842200D7835F /* takeOwnershipScript.txt */,
+				CD561E5E2ADD87C700D7835F /* TaskData.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		CD561E602ADD8C6D00D7835F /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E172AD7FF1200D7835F /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		CD561E612ADD8F5200D7835F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E0D2AD7FEE600D7835F /* Selectors */,
+				CD561E012AD7F8FA00D7835F /* LogoView.swift */,
+				CD561DF92AD7F8E000D7835F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDBA25E82AD7F68000EDF067 = {
+			isa = PBXGroup;
+			children = (
+				CDBA25F32AD7F68000EDF067 /* Take Ownership */,
+				CDBA26052AD7F68100EDF067 /* Take OwnershipTests */,
+				CDBA25F22AD7F68000EDF067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDBA25F22AD7F68000EDF067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDBA25F12AD7F68000EDF067 /* Take Ownership.app */,
+				CDBA26022AD7F68100EDF067 /* Take OwnershipTests.xctest */,
+				CDBA260C2AD7F68100EDF067 /* Take OwnershipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDBA25F32AD7F68000EDF067 /* Take Ownership */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E612ADD8F5200D7835F /* Views */,
+				CD561E602ADD8C6D00D7835F /* en.lproj */,
+				CD561E572ADD826400D7835F /* Task */,
+				CD561E542ADD81E200D7835F /* Helpers */,
+				CD561E4D2ADD7E6400D7835F /* Take_Ownership.entitlements.entitlements */,
+				CD561DFB2AD7F8EA00D7835F /* OwnershipTaker.swift */,
+				CDBA25F42AD7F68000EDF067 /* Take_OwnershipApp.swift */,
+				CDBA25F82AD7F68100EDF067 /* Assets.xcassets */,
+				CD561E522ADD7EEB00D7835F /* Preview Content.xcassets */,
+			);
+			path = "Take Ownership";
+			sourceTree = "<group>";
+		};
+		CDBA26052AD7F68100EDF067 /* Take OwnershipTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD561E4E2ADD7E9B00D7835F /* en.lproj */,
+				CDBA26062AD7F68100EDF067 /* Take_OwnershipTests.swift */,
+			);
+			path = "Take OwnershipTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDBA25F02AD7F68000EDF067 /* Take Ownership */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBA26162AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take Ownership" */;
+			buildPhases = (
+				CDBA25ED2AD7F68000EDF067 /* Sources */,
+				CDBA25EE2AD7F68000EDF067 /* Frameworks */,
+				CDBA25EF2AD7F68000EDF067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Take Ownership";
+			productName = "Take Ownership";
+			productReference = CDBA25F12AD7F68000EDF067 /* Take Ownership.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDBA26012AD7F68100EDF067 /* Take OwnershipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBA26192AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take OwnershipTests" */;
+			buildPhases = (
+				CDBA25FE2AD7F68100EDF067 /* Sources */,
+				CDBA25FF2AD7F68100EDF067 /* Frameworks */,
+				CDBA26002AD7F68100EDF067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBA26042AD7F68100EDF067 /* PBXTargetDependency */,
+			);
+			name = "Take OwnershipTests";
+			productName = "Take OwnershipTests";
+			productReference = CDBA26022AD7F68100EDF067 /* Take OwnershipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDBA260B2AD7F68100EDF067 /* Take OwnershipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBA261C2AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take OwnershipUITests" */;
+			buildPhases = (
+				CDBA26082AD7F68100EDF067 /* Sources */,
+				CDBA26092AD7F68100EDF067 /* Frameworks */,
+				CDBA260A2AD7F68100EDF067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDBA260E2AD7F68100EDF067 /* PBXTargetDependency */,
+			);
+			name = "Take OwnershipUITests";
+			productName = "Take OwnershipUITests";
+			productReference = CDBA260C2AD7F68100EDF067 /* Take OwnershipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDBA25E92AD7F68000EDF067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CDBA25F02AD7F68000EDF067 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CDBA26012AD7F68100EDF067 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CDBA25F02AD7F68000EDF067;
+					};
+					CDBA260B2AD7F68100EDF067 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CDBA25F02AD7F68000EDF067;
+					};
+				};
+			};
+			buildConfigurationList = CDBA25EC2AD7F68000EDF067 /* Build configuration list for PBXProject "Take Ownership" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDBA25E82AD7F68000EDF067;
+			productRefGroup = CDBA25F22AD7F68000EDF067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDBA25F02AD7F68000EDF067 /* Take Ownership */,
+				CDBA26012AD7F68100EDF067 /* Take OwnershipTests */,
+				CDBA260B2AD7F68100EDF067 /* Take OwnershipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDBA25EF2AD7F68000EDF067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD561E512ADD7E9B00D7835F /* Localizable.strings in Resources */,
+				CD561E532ADD7EEB00D7835F /* Preview Content.xcassets in Resources */,
+				CD561E5D2ADD842200D7835F /* takeOwnershipScript.txt in Resources */,
+				CD561E362AD7FF1200D7835F /* Localizable.strings in Resources */,
+				CDBA25F92AD7F68100EDF067 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA26002AD7F68100EDF067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA260A2AD7F68100EDF067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDBA25ED2AD7F68000EDF067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD561E022AD7F8FA00D7835F /* LogoView.swift in Sources */,
+				CD561E592ADD827D00D7835F /* TaskStatus.swift in Sources */,
+				CD561E5B2ADD831000D7835F /* LocalizationHelper.swift in Sources */,
+				CD561E562ADD820100D7835F /* StatusBasedDataDisplayHelper.swift in Sources */,
+				CD561E5F2ADD87C700D7835F /* TaskData.swift in Sources */,
+				CDBA25F52AD7F68000EDF067 /* Take_OwnershipApp.swift in Sources */,
+				CD561DFA2AD7F8E000D7835F /* ContentView.swift in Sources */,
+				CD561E112AD7FEE600D7835F /* FileSelector.swift in Sources */,
+				CD561DFC2AD7F8EA00D7835F /* OwnershipTaker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA25FE2AD7F68100EDF067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBA26072AD7F68100EDF067 /* Take_OwnershipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDBA26082AD7F68100EDF067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDBA26042AD7F68100EDF067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBA25F02AD7F68000EDF067 /* Take Ownership */;
+			targetProxy = CDBA26032AD7F68100EDF067 /* PBXContainerItemProxy */;
+		};
+		CDBA260E2AD7F68100EDF067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBA25F02AD7F68000EDF067 /* Take Ownership */;
+			targetProxy = CDBA260D2AD7F68100EDF067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD561E172AD7FF1200D7835F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD561E182AD7FF1200D7835F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CD561E4F2ADD7E9B00D7835F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD561E502ADD7E9B00D7835F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDBA26142AD7F68100EDF067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDBA26152AD7F68100EDF067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CDBA26172AD7F68100EDF067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Take Ownership/Take OwnershipDebug.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Take Ownership/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-Ownership";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDBA26182AD7F68100EDF067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Take Ownership/Take_Ownership.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Take Ownership/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-Ownership";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CDBA261A2AD7F68100EDF067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-OwnershipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Take Ownership.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Take Ownership";
+			};
+			name = Debug;
+		};
+		CDBA261B2AD7F68100EDF067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-OwnershipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Take Ownership.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Take Ownership";
+			};
+			name = Release;
+		};
+		CDBA261D2AD7F68100EDF067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-OwnershipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Take Ownership";
+			};
+			name = Debug;
+		};
+		CDBA261E2AD7F68100EDF067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qbutton.Take-OwnershipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Take Ownership";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDBA25EC2AD7F68000EDF067 /* Build configuration list for PBXProject "Take Ownership" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA26142AD7F68100EDF067 /* Debug */,
+				CDBA26152AD7F68100EDF067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBA26162AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take Ownership" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA26172AD7F68100EDF067 /* Debug */,
+				CDBA26182AD7F68100EDF067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBA26192AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take OwnershipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA261A2AD7F68100EDF067 /* Debug */,
+				CDBA261B2AD7F68100EDF067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBA261C2AD7F68100EDF067 /* Build configuration list for PBXNativeTarget "Take OwnershipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDBA261D2AD7F68100EDF067 /* Debug */,
+				CDBA261E2AD7F68100EDF067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDBA25E92AD7F68000EDF067 /* Project object */;
+}

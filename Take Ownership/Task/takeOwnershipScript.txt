@@ -1,0 +1,34 @@
+tell application "System Events"
+    -- We don't want to close other Terminal windows
+    set terminalWasOpen to (count of (every process whose name is "Terminal")) > 0
+end tell
+
+tell application "Terminal"
+    set currentTab to do script "sudo /usr/sbin/chown '%user:%group' '%path'"
+    activate
+    set windowId to id of front window
+    
+    repeat
+        try
+            if (busy of currentTab) then
+                -- The command is still running, continue waiting
+            else
+                if not terminalWasOpen then
+                    quit
+                else
+                    close window id windowId
+                end if
+                exit repeat
+            end if
+        on error
+            -- Error can be raised when the script is no longer running
+            if not terminalWasOpen then
+                quit
+            else
+                close window id windowId
+            end if
+            exit repeat
+        end try
+        delay 0.2
+    end repeat
+end tell
