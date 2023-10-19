@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache%20License%202.0-lightblue?style=for-the-badge&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)
-[![swift-version](https://img.shields.io/badge/swift-5.9-brightgreen.svg?style=for-the-badge)](https://github.com/apple/swift)
+[![swift-version](https://img.shields.io/badge/swift-5.0-brightgreen.svg?style=for-the-badge)](https://github.com/apple/swift)
 <img alt="Uses Badges" src="https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/uses-badges.svg" height="28px"/>
 
 # Take Ownership
